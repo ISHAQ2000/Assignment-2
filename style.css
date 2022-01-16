@@ -12,24 +12,51 @@ body{
 .first-section{
     display: flex;
     margin-top: 145px;
+    width: 1047px;
 }
+.left-side p{
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+  }
 .left-side{
     width: 582px;
     height: 270px;
-    margin-right: 133px;
 
 }
 .left-side h1{
     font-weight: bold;
-    font-size: 52px;
-    line-height: 70px;
+    font-size: 44px;
+    line-height: 50px;
     margin-bottom: 0;
     margin-top: 0;
 
 }
 .right-side{
     width: 475px;
-height: 475px;
+    height: 475px;
+}
+.right-side img{
+    width: 363px ;
+}
+#image{
+    width: 300px;
+    height: 256px;
+    padding-left:40px;
+
+}
+li{
+    cursor: pointer;
+    font-weight: bolder;
 }
 #submit-arrow{
     color: white;
@@ -43,6 +70,7 @@ button{
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 /* first section end */
 
@@ -135,7 +163,7 @@ footer{
 }
 /* footer end */
 /* Media Queries start */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 688px){
     .first-section{
         flex-direction: column-reverse;
         width: 100%;
@@ -178,11 +206,11 @@ footer{
     padding-left: 30px;
 }
 footer{
-    margin-top: 3500px;
+    margin-top:50px;
 }
-.footer{
+#optional{
     margin-top: 3500px;
-    margin-top: 0px;
+    margin-bottom: 0;
 }
 
 }
