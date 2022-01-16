@@ -1,5 +1,10 @@
 body{
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.body{
     margin-left: 115px ;
     margin-top: 86px;
 }
@@ -10,13 +15,35 @@ body{
 }
 .left-side{
     width: 582px;
-height: 270px;
+    height: 270px;
+    margin-right: 133px;
+
+}
+.left-side h1{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 .right-side{
     width: 475px;
 height: 475px;
 }
-
+#submit-arrow{
+    color: white;
+}
+button{
+    color: white;
+    background-color: rgba(224, 44, 109, 0.87);
+    border-radius: 20px;
+    padding: 10px 25px;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
 /* first section end */
 
 /* Second section start */
@@ -28,7 +55,11 @@ height: 475px;
 .section-title{
         text-align: center;
 }
-i{
+.fa-star{
+    color: #FB8200;
+
+}
+.half-star{
     color: #FB8200;
 
 }
@@ -64,6 +95,95 @@ p{
     grid-column-gap: 30px;
 
 }
+.fa-arrow-right{
+    color:rgba(224, 44, 109, 0.87);
+
+}
+h4{
+    text-align: right;
+    color:rgba(224, 44, 109, 0.87);
+}
+.see-more{
+    cursor: pointer;
+}
 
 
 /* Second section end */
+
+
+/* footer start */
+
+footer{
+    margin-top: 200px;
+    height: 150px;
+    background: #0A0826;
+    margin-left: 0;
+}
+.footer{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 0;
+    background: #0A0826;
+}
+.fab{
+    padding-right: 15px;
+    cursor: pointer;
+    margin-bottom: 0;
+    border-bottom: 0;
+    background: #0A0826;
+}
+/* footer end */
+/* Media Queries start */
+@media only screen and (max-width: 688px) {
+    .first-section{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 50px;
+    }
+        .body{
+            margin-left: 0px ;
+            margin-top: 0px;
+    }
+    .left-side{
+        width: 80%;
+        margin-bottom: 80px;
+        padding-left: 50px;
+    }
+    .left-side p {
+        margin-left: 15px
+
+    }
+    .button{
+        margin-left: 70px;
+    }
+
+    .right-side{
+        width: 80%;
+    }
+    .nav-bar h2{
+        text-align: center;
+    }
+    .left-side h1{
+    font-weight: bolder;
+    font-size: 29px;
+    line-height: 40px;
+    text-align: center;
+}
+.collection{
+    width:100% ;
+}
+.second-section{
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 30px;
+}
+footer{
+    margin-top: 3500px;
+}
+.footer{
+    margin-top: 3500px;
+    margin-top: 0px;
+}
+
+}
+/* Media Queries end */
